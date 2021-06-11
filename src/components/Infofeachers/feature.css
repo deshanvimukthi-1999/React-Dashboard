@@ -1,0 +1,36 @@
+.feature {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.featureItem {
+  flex: 1;
+  margin: 0px 20px;
+  padding: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #a31925, 4px 4px 22px -2px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #a31925, 4px 4px 22px -2px rgba(0, 0, 0, 0);
+}
+.featureTitle {
+  font-size: 20px;
+}
+
+.featureMoney {
+  margin: 10px opx;
+  display: flex;
+  align-items: c\;;
+}
+.Money {
+  font-size: 30px;
+  font-weight: 600;
+}
+.moneyRate {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  margin-bottom: 40px;
+  border-radius: 10;
+}
