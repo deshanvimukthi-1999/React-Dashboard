@@ -10,7 +10,7 @@ export default function Feature() {
                 <div className="featureMoney">
                 <span className="Money">$8,451</span>
                 <span className="moneyRate">
-                    3.2 <ArrowUpward />
+                    3.2 <ArrowUpward className=" featureIcon " />
                 </span>
                 </div>
                 <span className="featureSub">Compared a last week</span>
@@ -21,7 +21,7 @@ export default function Feature() {
                 <div className="featureMoney">
                 <span className="Money">3,973</span>
                 <span className="moneyRate">
-                   4.5< ArrowDownward />
+                   4.5< ArrowDownward className=" featureIcon negative" />
                 </span>
                 </div>
                 <span className="featureSub">Compared a last week</span>
@@ -32,7 +32,7 @@ export default function Feature() {
                 <div className="featureMoney">
                 <span className="Money">7,333</span>
                 <span className="moneyRate">
-                    12.5 <ArrowUpward  />
+                    12.5 <ArrowUpward className=" featureIcon" />
                 </span>
                 </div>
                 <span className="featureSub">Compared a last week</span>
@@ -43,7 +43,7 @@ export default function Feature() {
                 <div className="featureMoney">
                 <span className="Money">48,973</span>
                 <span className="moneyRate">
-                   9.5<ArrowUpward />
+                   9.5<ArrowUpward className=" featureIcon"/>
                 </span>
                 </div>
                 <span className="featureSub">Compared a last week</span>

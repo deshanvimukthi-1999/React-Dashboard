@@ -34,3 +34,16 @@
   margin-bottom: 40px;
   border-radius: 10;
 }
+.featureIcon {
+  font-size: 14px;
+  margin-left: 5px;
+  color: greenyellow;
+}
+
+.featureIcon.negative {
+  color: red;
+}
+.featureSub {
+  font-size: 15px;
+  color: gray;
+}
