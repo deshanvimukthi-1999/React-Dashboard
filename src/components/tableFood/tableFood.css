@@ -48,11 +48,18 @@
   display: flex;
   align-items: center;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 7px 10px;
   background-color: #eeeef7;
   color: #555;
   cursor: pointer;
+}
+
+.tableFoodListItem.active,
+.tableFoodListItem:hover,
+.tableFoodButton.active,
+.tableFoodButton:hover {
+  background-color: rgb(236, 231, 229);
 }
 
 .tableFoodIcon {
