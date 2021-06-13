@@ -2,8 +2,9 @@ import Chart from "../Chart/Chart";
 import Feature from "../Infofeachers/Feature";
 import "./home.css";
 import { userData } from "../../dummyData";
-import TableFood from "../tableFood/TableFood";
-import Table2 from "../widgetLg/Table2";
+import TableFood from "../TableFood/TableFood";
+import Table2 from "../Table2/Table2";
+import Food from "../Foods/Foods";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
                 <TableFood />
                 <Table2/>
            </div>
+           <Food />
         </div>
     )
 }
