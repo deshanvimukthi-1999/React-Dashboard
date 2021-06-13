@@ -2,13 +2,13 @@
   flex: 1;
   background-color: rgb(255, 255, 255);
   position: sticky;
-  top: 50%;
-  width: fit-content;
+  top: 20%;
 }
 
 .sidebarWrapper {
   padding: 25px;
   color: rgb(12, 11, 11);
+  width: 150px;
 }
 
 .sidebarMenu {

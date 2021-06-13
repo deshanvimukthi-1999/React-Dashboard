@@ -3,6 +3,7 @@ import "./sidebar.css";
 import {
     Dashboard, RestaurantMenu, ShoppingCart, List, Receipt
 } from '@material-ui/icons';
+import { Link } from "react-router-dom";
 
 
 export default function Sidebar() {
@@ -15,9 +16,11 @@ export default function Sidebar() {
                         Dashboard
                     </h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            Foodtech
-                        </li>
+                        <Link to="/" className="link">
+                            <li className="sidebarListItem active">
+                                FoodTech
+                            </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
@@ -71,6 +74,7 @@ export default function Sidebar() {
                 </div>
             </div>
         </div>
+    
     );
 }
 
