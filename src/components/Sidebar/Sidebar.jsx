@@ -10,32 +10,28 @@ import { IconContext } from 'react-icons/lib';
 const Nav = styled.div`
   flex: 1;
   position: sticky;
-  top: 15%;
-  background: black;
+  top: 13%;
+  background: rgb(216, 173, 87);
   height: 70px;
-  width: 10px;
- 
 `;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
   font-size: 2rem;
-  height: 80px;
+  height: 70px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 `;
 
 const SidebarNav = styled.nav`
   background: black;
-  width: 220px;
+  width: 210px;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 300ms;
-
 `;
 
 const SidebarWrap = styled.div`

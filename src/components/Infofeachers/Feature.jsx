@@ -1,9 +1,18 @@
 import React from 'react'
 import {ArrowUpward, ArrowDownward} from '@material-ui/icons';
 import "./feature.css";
+import Typed from "react-typed";
 
 export default function Feature() {
     return (
+        <>
+         <h1 className="hey1"><Typed
+                    className="typed-text"
+                    strings={["Hey, Welcome to FOODTECH!!", ]}
+                    typeSpeed={40}
+                    backSpeed={40}
+                    loop
+                  /> </h1>
         <div className="feature">
              <div className="featureItem">
                 <span className="featureTitle">Sells Graph</span>
@@ -49,5 +58,6 @@ export default function Feature() {
                 <span className="featureSub">Compared a last week</span>
             </div> 
         </div>
+       </>
     )
 }
