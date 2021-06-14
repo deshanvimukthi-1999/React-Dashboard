@@ -1,81 +1,73 @@
-import React from 'react';
-import "./sidebar.css";
-import {
-    Dashboard, RestaurantMenu, ShoppingCart, List, Receipt
-} from '@material-ui/icons';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { SidebarData } from './SidebarData';
+import SubMenu from './SubMenu';
+import { IconContext } from 'react-icons/lib';
 
+const Nav = styled.div`
+  flex: 1;
+  position: sticky;
+  top: 18%;
+  background: black;
+  height: 70px;
+  width: 10px;
+ ;
+`;
 
-export default function Sidebar() {
-    return (
-        <div className="sidebar">
-            <div className="sidebarWrapper">
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">
-                        <Dashboard className="sidebarIcon" />
-                        Dashboard
-                    </h3>
-                    <ul className="sidebarList">
-                        <Link to="/" className="link">
-                            <li className="sidebarListItem active">
-                                FoodTech
-                            </li>
-                        </Link>
-                    </ul>
-                </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">
-                        < RestaurantMenu className="sidebarIcon" />
-                        Menu
-                    </h3>
-                    <ul className="sidebarList">
-                        <li className="sidebarListItem ">
-                            Menu Catalogue
-                        </li>
-                        <li className="sidebarListItem">
-                            Menu List
-                        </li>
-                        <li className="sidebarListItem">
-                            Menu Grid
-                        </li>
-                        <li className="sidebarListItem">
-                            Add Product
-                        </li>
-                        <li className="sidebarListItem">
-                            Product Detail
-                        </li>
-                    </ul>
-                </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">
-                        <ShoppingCart className="sidebarIcon" />
-                        Orders
-                    </h3>
-                </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">
-                        <List className="sidebarIcon" />
-                        Resturants List
-                    </h3>
-                </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">
-                        <Receipt className="sidebarIcon" />
-                        Invoice
-                    </h3>
-                    <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            Invoice Detail
-                        </li>
-                        <li className="sidebarListItem">
-                            Invoice List
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
-    );
-}
+const NavIcon = styled(Link)`
+  margin-left: 2rem;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
 
+const SidebarNav = styled.nav`
+  background: black;
+  width: 220px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  transition: 300ms;
 
+`;
+
+const SidebarWrap = styled.div`
+  width: 100%;
+`;
+
+const Sidebar = () => {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
+  return (
+    <>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <Nav>
+          <NavIcon to='#'>
+            <FaIcons.FaBars onClick={showSidebar} />
+          </NavIcon>
+        </Nav>
+        <SidebarNav sidebar={sidebar}>
+          <SidebarWrap>
+            <NavIcon to='#'>
+              <AiIcons.AiOutlineClose onClick={showSidebar} />
+            </NavIcon>
+            {SidebarData.map((item, index) => {
+              return <SubMenu item={item} key={index} />;
+            })}
+          </SidebarWrap>
+        </SidebarNav>
+      </IconContext.Provider>
+    </>
+  );
+};
+
+export default Sidebar;
