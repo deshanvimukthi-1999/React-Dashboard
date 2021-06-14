@@ -3,9 +3,11 @@ import './App.css';
 import Topbar from './components/Topbar/Topbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Pages/Home';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as 
+  Router, Switch, Route } from "react-router-dom";
 import Menu from './components/Pages/Menu';
 import Nopage from './components/Pages/Nopage';
+import NotFoundPage from './components/Pages/NotFoundPage';
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
           <Route path='/home'  component={Home} exact />
           <Route path='/menu' component={Menu}  />
           <Route path='/nopage' component={Nopage}  />
+          <Route component={NotFoundPage} />
         </Switch>
       </div>
     </Router>

@@ -10,20 +10,20 @@ import { IconContext } from 'react-icons/lib';
 const Nav = styled.div`
   flex: 1;
   position: sticky;
-  top: 15%;
-
+  top: 5%;
+  background-color: white,
 `;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  font-size: 2rem;
+  font-size: 20px;
   height: 70px;
   display: flex;
   align-items: center;
 `;
 
 const SidebarNav = styled.nav`
-  background: black;
+  background: white;
   width: 210px;
   height: 100vh;
   display: flex;
@@ -44,7 +44,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: '#000000' }}>
         <Nav>
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />

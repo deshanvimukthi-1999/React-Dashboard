@@ -55,6 +55,7 @@ export const SidebarData = [
   },
   {
     title: ' Orders',
+    path: '/menu',
     icon: <ShoppingCart />
   },
   {
