@@ -34,7 +34,7 @@ export default function Topbar() {
                         <MailOutline />
                         <span className="topIconBadge">2</span>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                    <img src="http://slidesigma.nyc/templatemonster/react/foodtech/static/media/customer-1.41c0170d.jpg"
                         alt="avatar" className="topAvatar" />
                 </div>
             </div>

@@ -34,10 +34,13 @@
 .tableFoodUser {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .tableFoodUsername {
   font-weight: 600;
+  align-items: center;
+  display: flex;
 }
 
 .tableFoodUserTitle {

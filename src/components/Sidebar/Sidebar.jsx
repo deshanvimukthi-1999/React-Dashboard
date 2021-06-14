@@ -10,9 +10,8 @@ import { IconContext } from 'react-icons/lib';
 const Nav = styled.div`
   flex: 1;
   position: sticky;
-  top: 13%;
-  background: rgb(216, 173, 87);
-  height: 70px;
+  top: 15%;
+
 `;
 
 const NavIcon = styled(Link)`
