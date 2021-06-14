@@ -1,6 +1,6 @@
 import React from 'react'
-import {ArrowUpward, ArrowDownward} from '@material-ui/icons';
 import "./food.css";
+
 
 export default function Food() {
     return (
