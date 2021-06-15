@@ -20,7 +20,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'FoodTech',
-        path: '/home',
+        path: '/dashboard/home',
       }
     ]
   },
@@ -33,23 +33,23 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Menu Catalogue',
-        path: '/menu',
+        path: '/menu/menu1',
       },
       {
         title: ' Menu List',
-        path: '/nopage',
+        path: '/menu/nopage',
       },
       {
         title: 'Menu Grid',
-        path: '/menu',
+        path: '/menu/menu2',
       },
       {
         title: 'Add Product',
-        path: '/menu',
+        path: '/menu/menu3',
       },
       {
         title: ' Product Detail',
-        path: '/nopage',
+        path: '/menu/nopage',
       }
     ]
   },
@@ -72,12 +72,12 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Invoice Detail',
-        path: '/nopage',
+        path: '/menu/menu1',
     
       },
       {
         title: ' Invoice List',
-        path: '/nopage',
+        path: '/menu/menu3',
         
       }
     ]
