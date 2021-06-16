@@ -8,10 +8,10 @@ import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 
 const Nav = styled.div`
-  flex: 1;
+  flex: 3;
   position: sticky;
   top: 5%;
-  background-color: white,
+  background-color: white;
 `;
 
 const NavIcon = styled(Link)`
@@ -30,7 +30,8 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: fixed;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-  transition: 300ms;
+  transition: 350ms;
+  z-index:10;
 `;
 
 const SidebarWrap = styled.div`
